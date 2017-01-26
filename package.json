@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/life-statistics/life-statistics#readme",
   "devDependencies": {
-    "npm run-cli": "6.22.2",
+    "babel-cli": "6.22.2",
     "babel-loader": "6.2.10",
     "babel-preset-es2015": "6.22.0",
     "babel-preset-es2016": "6.22.0",
