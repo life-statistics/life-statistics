@@ -9,6 +9,7 @@
     "watch:test": "npm test -- --watch",
     "test:ci": "npm test",
     "test:ci:cover": "nyc --reporter=lcov npm test",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -31,6 +32,7 @@
   "homepage": "https://github.com/life-statistics/life-statistics#readme",
   "devDependencies": {
     "chai": "3.5.0",
+    "codecov.io": "0.1.6",
     "commitizen": "2.9.5",
     "cz-conventional-changelog": "1.2.0",
     "ghooks": "2.0.0",
