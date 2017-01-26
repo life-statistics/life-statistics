@@ -6,6 +6,7 @@
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/index.test.js -w",
+    "test:ci": "mocha src/index.test.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -37,5 +38,11 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
+  },
+  "release": {
+    "branch": [
+      "master",
+      "develop"
+    ]
   }
 }
