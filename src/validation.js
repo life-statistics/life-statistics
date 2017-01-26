@@ -3,11 +3,11 @@ var validateDateOfBirth = function(dateOfBirth){
         return false;
     }
 
-    if(date.length != 10) {
+    if(dateOfBirth.length != 10) {
         return false;
     }
 
-    if(date.split("-").length - 1 != 2){
+    if(dateOfBirth.split("-").length - 1 != 2){
         return false;
     }
 
@@ -22,13 +22,15 @@ var validateGender = function(gender){
     return true;
 }
 
-var validateCountry = function(countryCode){
-    if (typeof countryCode != string){
+var validateCountry = function(countryCode) {
+    if (typeof countryCode != 'string'){
         return false;
     }
-    if(countryCode.length != 3) {
+
+    if(countryCode.length != 3 && countryCode != "not-set") {
         return false;
     }
+
     return true; // it is shit, need to have list of all iso countries somewhere
 }
 
