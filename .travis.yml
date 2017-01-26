@@ -11,7 +11,7 @@ node_js:
 before_script:
   - npm prune
 script:
-  - npm run test:ci
+  - npm run test:ci:cover
 after_success:
   - npm run semantic-release
 branches:
