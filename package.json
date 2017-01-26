@@ -30,6 +30,10 @@
     "statistics",
     "life-in-boxes"
   ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "'Pawel <'contact@pawelgorka.com'>",
   "license": "MIT",
   "bugs": {
