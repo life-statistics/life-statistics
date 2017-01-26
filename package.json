@@ -40,9 +40,6 @@
     }
   },
   "release": {
-    "branch": [
-      "master",
-      "develop"
-    ]
+    "branch": "develop"
   }
 }
