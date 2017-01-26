@@ -1,5 +1,10 @@
 # Life Statistics
 
+[![Travis](https://img.shields.io/travis/life-statistics/life-statistics.svg?style=flat-square)](https://travis-ci.org/life-statistics/life-statistics)
+[![Codecov](https://img.shields.io/codecov/c/github/life-statistics/life-statistics.svg)](https://codecov.io/gh/life-statistics/life-statistics)
+[![Version](https://img.shields.io/npm/v/life-statistics.svg?style=flat-square)](http://npm.im/life-statistics)
+[![MIT License](https://img.shields.io/npm/l/life-statistics.svg?style=flat-square)](http://opensource.org/licenses/MIT)
+
 This library computes the number of days, months, years between dates of significant meening.
 
 as input the library expects an object: 
