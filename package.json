@@ -1,0 +1,27 @@
+{
+  "name": "life-statistics",
+  "version": "0.0.1",
+  "description": "this library returns information about life expectancy, education, retirement based on date of birth, gender and country of provided input data",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/life-statistics/life-statistics.git"
+  },
+  "keywords": [
+    "life-stats",
+    "dates",
+    "dateparsing",
+    "country-data",
+    "statistics",
+    "life-in-boxes"
+  ],
+  "author": "'Pawel <'contact@pawelgorka.com'>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/life-statistics/life-statistics/issues"
+  },
+  "homepage": "https://github.com/life-statistics/life-statistics#readme"
+}
