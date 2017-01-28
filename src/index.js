@@ -1,32 +1,16 @@
-var validator = require('./validation');
-var LifeStats = require('./life-stats');
-var lifeStats = new LifeStats();
+import * as GENDER from './gender';
+import * as validator from './validator';
+import { calculateLifeStats } from './life-stats';
+import { getSupportedCountries } from './countries'
 
-function computeFor(person) {
-  if (typeof person != 'object'){
-    return {error: "invalid_input", message: "person object is required"}
+function computeFor({dateOfBirth, country = 'pol', gender = GENDER.GENDER_NOT_SET}= {}) {
+  var validation = validator.validate({dateOfBirth, country, gender});
+
+  if (validation.result != 'success') {
+    return { error: "invalid_input", message: validation.data }
   }
 
-  person.gender = person.gender || "not-set";
-  person.country = person.country || "not-set";
-
-  if (validator.validateDateOfBirth(person.dateOfBirth) === false){
-    return {error: "invalid_input", message: "date of birth shouldbe in format 'YYYY-MM-DD'"}
-  }
-
-  if (validator.validateGender(person.gender) === false){
-    return {error: "invalid_input", message: "gender should be either empty string, or male or female"}
-  }
-
-  if (validator.validateCountry(person.country) === false){
-    return {error: "invalid_input", message: "country code should be a three letter string, iso-3166"}
-  }
-
-  lifeStats.setCountry(person.country);
-
-  return lifeStats.calculateFor(person);
+  return calculateLifeStats({dateOfBirth, country, gender});
 }
 
-module.exports = {
-  computeFor: computeFor
-};
+export { computeFor, getSupportedCountries};
