@@ -8,7 +8,7 @@
 This library computes the number of days, months, years between dates of significant meening.
 
 as input the library expects an object: 
-
+```
 {
     // YYYY-MM-DD
     "date-of-birth": "1989-09-23",
@@ -17,9 +17,9 @@ as input the library expects an object:
     // Three letter country-codes - ISO 3166
     "country" : "pol"
 }
-
+```
 It should return life statistics object that looks following:
-
+```
 {
     "life-expectancy" : 64.5,
     "retirement" : {
@@ -39,5 +39,5 @@ It should return life statistics object that looks following:
         ],
     }
 }
-
+```
 
